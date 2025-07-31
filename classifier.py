@@ -2,6 +2,7 @@ import openai
 import os
 from dotenv import load_dotenv
 
+# Load the OpenAI API key
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -22,7 +23,7 @@ Only respond in this strict JSON format:
     user_prompt = f'Client Intake: "{intake_text}"\nPlease classify accordingly.'
 
     try:
-        response = openai.ChatCompletion.create(
+        response = openai.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": system_prompt},
@@ -30,6 +31,7 @@ Only respond in this strict JSON format:
             ],
             temperature=0.3
         )
-        return response['choices'][0]['message']['content']
+        return response.choices[0].message.content
+
     except Exception as e:
         return f"Error calling OpenAI API: {e}"
