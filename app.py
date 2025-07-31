@@ -1,6 +1,7 @@
 import streamlit as st
 from classifier import classify_intake
 import json
+import logging
 
 st.set_page_config(page_title="AI Legal Intake Classifier", layout="centered")
 
@@ -26,3 +27,10 @@ if st.button("Classify"):
             except json.JSONDecodeError:
                 st.error("Could not parse response as JSON. Here’s what was returned:")
                 st.code(response)
+
+# Setup logging
+logging.basicConfig(filename='usage.log', level=logging.INFO)
+
+# Inside your classify_intake function or main code
+logging.info(f"User submitted: {user_input}")
+logging.info(f"Response: {result}")
