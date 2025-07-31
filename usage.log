@@ -17,3 +17,18 @@ INFO:root:User submitted: I need help getting custody of my daughter. My ex is n
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 INFO:root:User submitted: I need help getting custody of my daughter. My ex is not allowing visitation and it's really affecting her emotionally.
 INFO:root:Response: {'case_type': 'Family Law - Custody Dispute', 'urgency_level': 'High', 'status_recommendation': 'Qualified Lead'}
+INFO:root:User submitted: My employer fired me after I reported unsafe working conditions. I think this might be retaliation. What are my options?
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:User submitted: My employer fired me after I reported unsafe working conditions. I think this might be retaliation. What are my options?
+INFO:root:Response: {'case_type': 'Employment Law - Retaliation', 'urgency_level': 'Medium', 'status_recommendation': 'Qualified Lead'}
+INFO:root:User submitted: I need help getting custody of my daughter. My ex is not allowing visitation and it's really affecting her emotionally.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:User submitted: I need help getting custody of my daughter. My ex is not allowing visitation and it's really affecting her emotionally.
+INFO:root:Response: {'case_type': 'Family Law - Child Custody', 'urgency_level': 'High', 'status_recommendation': 'Qualified Lead'}
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:User submitted: I need help getting custody of my daughter. My ex is not allowing visitation and it's really affecting her emotionally.
+INFO:root:Response: {'case_type': 'Family Law - Custody Dispute', 'urgency_level': 'High', 'status_recommendation': 'Qualified Lead'}
+INFO:root:User submitted: I was rear-ended by a truck last week and have had severe back pain ever since. I want to understand if I have a case.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:User submitted: I was rear-ended by a truck last week and have had severe back pain ever since. I want to understand if I have a case.
+INFO:root:Response: {'case_type': 'Car Accident', 'urgency_level': 'High', 'status_recommendation': 'Qualified Lead'}
