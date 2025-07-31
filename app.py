@@ -1,4 +1,4 @@
-from classifier.py import classify_intake
+from classifier import classify_intake
 
 if __name__ == "__main__":
     user_input = input("Paste client intake message here:\n")
