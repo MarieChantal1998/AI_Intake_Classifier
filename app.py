@@ -1,4 +1,4 @@
-#FRONTEND
+#Streamlit FRONTEND
 
 import streamlit as st                # Streamlit is our UI framework — it helps us build web apps fast, straight from Python.
 from classifier import classify_intake # This is our backend function — it sends the message to OpenAI for classification.
